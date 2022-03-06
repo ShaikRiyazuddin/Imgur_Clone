@@ -131,10 +131,23 @@ body{
       min-width: 40px;
       margin-top: 22px;
   }
-
+  #IconsDiv{
+      display: flex;
+      justify-content:space-around;
+  }
   .icon2{
     margin-left: 73%;
   }
+  #icon4, #icon5, #icon6{
+    position: relative;
+    color: rgb(190, 187, 187);
+    margin:2px;
+    padding-bottom: 10px;
+  }
+  #icon4:hover, #icon5:hover, #icon6:hover{
+      color: white;
+  }
+
   #explore{
       width: 78%;
       margin-left:11%;

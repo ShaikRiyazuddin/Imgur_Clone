@@ -2,13 +2,22 @@ let appen = (arr) => {
   arr.map((e) => {
     console.log(e);
     let content_Div = document.createElement("div");
+    content_Div.setAttribute("class", "contentdiv");
     let imgs = document.createElement("img");
     imgs.setAttribute("src", e.src.original);
 
     let p = document.createElement("p");
     p.textContent = e.alt;
-
-    content_Div.append(imgs, p);
+    let div = document.createElement("div");
+    div.setAttribute("id", "IconsDiv");
+    let uploadIcon = document.createElement("div");
+    uploadIcon.innerHTML  =` <span class="material-icons" id = "icon4">upload</span>`
+    let commentIcon = document.createElement("div");
+    commentIcon.innerHTML  = `<span class="material-icons" id = "icon5">chat_bubble_outline</span>`
+    let viewIcon = document.createElement("div");
+    viewIcon.innerHTML  = `<span class="material-icons" id = "icon6">visibility</span>`
+    div.append(uploadIcon,commentIcon,viewIcon);
+    content_Div.append(imgs, p,div);
     document.querySelector(".section2").append(content_Div);
   });
 };
