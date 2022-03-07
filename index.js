@@ -12,7 +12,6 @@ let appen = (arr) => {
 
     let p = document.createElement("p");
     p.textContent = e.alt;
-<<<<<<< HEAD:Imgur-Clone/index.js
     let div = document.createElement("div");
     div.setAttribute("id", "IconsDiv");
     let uploadIcon = document.createElement("div");
@@ -23,24 +22,6 @@ let appen = (arr) => {
     viewIcon.innerHTML  = `<span class="material-icons" id = "icon6">visibility</span>`
     div.append(uploadIcon,commentIcon,viewIcon);
     content_Div.append(imgs, p,div);
-=======
-
-    let span = document.createElement("span")
-    span.textContent = "🡹 150 🡻"
-    span.setAttribute("class","sleft")
-    
-    let span1 = document.createElement("span")
-    span1.setAttribute("class", "sright")
-    span1.textContent = `💬${Math.floor(Math.random() * 10)}`
-
-    let span2 = document.createElement("span")
-    span2.setAttribute("class", "sright")
-    span2.textContent = `👁️‍🗨️${Math.floor(Math.random() * 10)}k`
-
-
-  
-    content_Div.append(imgs, p,span,span1,span2);
->>>>>>> 0ebc9ac023e6eb07ca1a09d68147f0228230aad2:index.js
     document.querySelector(".section2").append(content_Div);
   });
 };
