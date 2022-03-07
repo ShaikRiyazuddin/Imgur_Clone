@@ -2,11 +2,7 @@ let appen = (arr) => {
   arr.map((e) => {
     console.log(e);
     let content_Div = document.createElement("div");
-<<<<<<< HEAD:Imgur-Clone/index.js
     content_Div.setAttribute("class", "contentdiv");
-=======
-
->>>>>>> 0ebc9ac023e6eb07ca1a09d68147f0228230aad2:index.js
     let imgs = document.createElement("img");
     imgs.setAttribute("src", e.src.original);
 
@@ -34,11 +30,7 @@ async function imgur() {
       headers: {
         Accept: "application/json",
         Authorization:
-<<<<<<< HEAD:Imgur-Clone/index.js
           "563492ad6f9170000100000133595104e05c43158e8ab70fef6f6574",
-=======
-          "563492ad6f91700001000001edb3647acc49449e8f2d2064f2957de9",
->>>>>>> 0ebc9ac023e6eb07ca1a09d68147f0228230aad2:index.js
       },
     }
   );
