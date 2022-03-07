@@ -141,11 +141,19 @@ body{
   .icon2{
     margin-left: 73%;
   }
-  #icon4, #icon5, #icon6{
+  #icon4, #icon5, #icon6, #icon7{
     position: relative;
     color: rgb(190, 187, 187);
     margin:2px;
     padding-bottom: 10px;
+  }
+  #icon7{
+      color: rgb(169, 169, 169);
+      position: relative;
+      margin-left: -12px;
+      font-size:30px;
+    padding-bottom: 0px;
+    vertical-align: middle;
   }
   #icon4:hover, #icon5:hover, #icon6:hover{
       color: white;
